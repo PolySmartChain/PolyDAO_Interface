@@ -1,0 +1,119 @@
+@base_color: #E49C23;
+@new_color: #2081e2;
+@dialog_border: #ebedf0;
+ul,
+li {
+  list-style: none;
+}
+.flex-def {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.flex-zCenter {
+  -webkit-box-pack: center;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.flex-zBetween {
+  -webkit-box-pack: justify;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.flex-cCenter {
+  -webkit-box-align: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+}
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  height: 100%;
+}
+.el-message {
+  min-width: 130px !important;
+}
+
+
+.mc-btn-default {
+  border: 2px solid @new_color;
+  font-size: 18px;
+  color: @new_color;
+  width: 180px;
+  height: 60px;
+  display: inline-block;
+  line-height: 56px;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  margin-right: 24px;
+  font-family: "PoppinsBold" !important;
+}
+
+.claim-btn {
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .img-item {
+      width: 18px;
+      height: 18px;
+      display: flex;
+      align-items: center;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+.gray {
+  background-color: rgba(23, 43, 77, 0.2);
+  border: 2px solid transparent;
+  color: #172b4d;
+  margin-right: 12px;
+}
+.timestr {
+  color: #2081e2;
+  vertical-align: bottom;
+}
+button {
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0 none;
+  background: #fff;
+}
+
